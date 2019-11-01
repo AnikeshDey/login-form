@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:#33313b;
+            margin: 0;
+        }
+        
+        .border{
+            border-radius: 129px 12px 11px 15px;
+            -moz-border-radius: 129px 12px 11px 15px;
+            -webkit-border-radius: 129px 12px 11px 15px;
+            border: 0px solid #000000;
+        }
+        .login{
+
+            width: 25%;
+            padding: 50px 0; 
+            text-align: center;
+            background-color: #010101;
+            color:#fff;
+            border-radius:5px;
+            position: absolute;
+            left:600px;
+            top: 20%;
+            
+        }
+        .shadow {
+            -webkit-box-shadow: 3px 3px 5px 6px #373331;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    3px 3px 5px 6px #373331;  /* Firefox 3.5 - 3.6 */
+            box-shadow:         3px 3px 5px 6px #373331;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        }
+        .shadow1{
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        h1{
+            margin-bottom: 10px;
+            margin-left: 15px;
+            margin-top: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+            font-size: 1.7rem;
+        }
+        form * {
+            display: inline-block;
+            margin: 10px 4px;
+            font-size: 0.8rem;;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 24px;
+            border: 4px solid;
+            border-color: #0075f6;
+            background-color: transparent;
+            transition: width 2s;
+        }
+        form *:focus{
+            outline: none;
+        }
+        .input{
+            color:#fff;
+            transition: 0.25s;
+        }
+        .input:focus{
+            border-color:#52de97;
+            width:300px;
+        }
+        form button{
+            display: block;
+            position: relative;
+            left: 34%;
+            padding: 15px 40px;
+            border-color:#52de97;
+            color:#fff;
+        }
+        form button:hover{
+            cursor: pointer;
+            background-color: #347474;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login shadow1">
+        <h1>LOGIN</h1>
+        <form action="/" method="post">
+            <input type="text" class="input" name="uid" id="" placeholder="Username">
+            <input type="password" class="input" name="password" id="" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', (e) => e.preventDefault());
+        //background-color: #393e46;
+    </script>
+</body>
+</html>
